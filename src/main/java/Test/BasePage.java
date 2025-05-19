@@ -12,10 +12,14 @@ public class BasePage {
         driver.get(TestUrl);
 
         Menu menuNav = new Menu(driver);
+        LoginPage loginPage = new LoginPage(driver);
         menuNav.home();
         menuNav.practice();
-        menuNav.courses();
-        menuNav.blog();
-        menuNav.contact();
+
+        loginPage.TestLoginPage();
+
+        //menuNav.courses();
+        //menuNav.blog();
+        //menuNav.contact();
     }
 }
