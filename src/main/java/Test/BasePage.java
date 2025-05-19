@@ -3,6 +3,8 @@ package Test;
 import helper.BrowserConfig;
 import org.openqa.selenium.WebDriver;
 
+import static Utils.debug.log;
+
 public class BasePage {
     public static void main (String[] args){
         BrowserConfig.BrowserType browser = BrowserConfig.BrowserType.chrome;
@@ -19,6 +21,7 @@ public class BasePage {
         loginPage.TestLoginPage();
         loginPage.Login("student","Password123");
         loginPage.submitBtn();
+        log("hello");
 
         //menuNav.courses();
         //menuNav.blog();
