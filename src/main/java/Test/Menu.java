@@ -9,28 +9,27 @@ public class Menu {
     public Menu ( WebDriver driver){
         this.driver = driver;
     }
-
-    public void HomeMenu(){
-        WebElement homeNav = driver.findElement(By.xpath("//a[text()='Home']"));
-        homeNav.click();
-    }
-    public void PracticeMenu(){
-        WebElement practiceNav = driver.findElement(By.xpath("//a[text()='Practice']"));
-        practiceNav.click();
+    private void clickMenu(String menuText) {
+        driver.findElement(By.xpath("//a[text()='" + menuText + "']")).click();
     }
 
-    public void CoursesMenu(){
-        WebElement coursesNav = driver.findElement(By.xpath("//a[text()='Courses']"));
-        coursesNav.click();
+    public void home() {
+        clickMenu("Home");
     }
 
-    public void BlogMenu(){
-        WebElement blogNav = driver.findElement(By.xpath("//a[text()='Blog']"));
-        blogNav.click();
+    public void practice() {
+        clickMenu("Practice");
     }
 
-    public void ContactMenu(){
-        WebElement contactNav = driver.findElement(By.xpath("//a[text()='Contact']"));
-        contactNav.click();
+    public void courses() {
+        clickMenu("Courses");
+    }
+
+    public void blog() {
+        clickMenu("Blog");
+    }
+
+    public void contact() {
+        clickMenu("Contact");
     }
 }
