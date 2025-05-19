@@ -17,6 +17,8 @@ public class BasePage {
         menuNav.practice();
 
         loginPage.TestLoginPage();
+        loginPage.Login("student","Password123");
+        loginPage.submitBtn();
 
         //menuNav.courses();
         //menuNav.blog();
