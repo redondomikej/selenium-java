@@ -5,10 +5,17 @@ import org.openqa.selenium.WebDriver;
 
 public class BasePage {
     public static void main (String[] args){
-        //BrowserConfig.BrowserType browser = BrowserConfig.BrowserType.safari;
         BrowserConfig.BrowserType browser = BrowserConfig.BrowserType.chrome;
         boolean isHeadless = false ;
         WebDriver driver = BrowserConfig.getDriver(browser,isHeadless);
-        driver.get("https://practicetestautomation.com");
+        String TestUrl = "https://practicetestautomation.com";
+        driver.get(TestUrl);
+
+        Menu menuNav = new Menu(driver);
+        menuNav.HomeMenu();
+        menuNav.PracticeMenu();
+        menuNav.CoursesMenu();
+        menuNav.BlogMenu();
+        menuNav.ContactMenu();
     }
 }
