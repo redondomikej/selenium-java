@@ -22,7 +22,7 @@ public class BasePage {
         loginPage.Login("student","Password123");
         loginPage.submitBtn();
         loginPage.logoutBtn();
-        log("try");
+        log("try1");
 
         //menuNav.courses();
         //menuNav.blog();
