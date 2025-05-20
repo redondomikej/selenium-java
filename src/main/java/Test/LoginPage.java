@@ -25,4 +25,8 @@ public class LoginPage {
         WebElement clickSubmitButton = driver.findElement(By.id("submit"));
         clickSubmitButton.click();
     }
+    public void logoutBtn(){
+        WebElement logoutButton = driver.findElement(By.xpath("//a[text()='Log out']"));
+        logoutButton.click();
+    }
 }
