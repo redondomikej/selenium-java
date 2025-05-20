@@ -21,7 +21,7 @@ public class BasePage {
         loginPage.TestLoginPage();
         loginPage.Login("student","Password123");
         loginPage.submitBtn();
-        log("hello");
+        log("try");
 
         //menuNav.courses();
         //menuNav.blog();
